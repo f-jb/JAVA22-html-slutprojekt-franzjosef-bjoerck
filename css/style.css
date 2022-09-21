@@ -59,13 +59,12 @@ article>h1 {
 }
 
 /* flödet i navbaren */
-
 .navbar {
 	flex: 10%;
 	padding: 20px;
 }
 
-.navbar > section{
+.navbar>section {
 	margin-bottom: 2rem;
 }
 
