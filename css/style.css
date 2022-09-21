@@ -69,6 +69,11 @@ article>h1 {
 	margin-bottom: 2rem;
 }
 
+li {
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+
 .about {
 	font-size: large;
 }
@@ -99,42 +104,27 @@ article {
 	text-align: center;
 }
 
+/* Större text på "Om mig"-sidan */
+.about_text {
+	font-size: larger;
+}
 
-
+/* reflexiv design */
 @media screen and (max-width: 700px) {
 	.container {
 		flex-direction: column;
 	}
 }
 
-li {
-	margin-bottom: 5px;
-	margin-left: 15px;
-}
-
-.about_text {
-	font-size: larger;
-}
-
-
+/* Footer staljing */
 footer {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 }
 
-.social {
-	/* min-height: 6em; */
-	/* min-width: 100%; */
-	/* bottom: 0; */
-	/* text-align: center; */
-}
-
 .contact {
-	/* text-align: center; */
 	display: flex;
 	flex-flow: column nowrap;
-	/* justify-content: center; */
 	align-items: center;
-	/* margin-bottom: 15px; */
 }
