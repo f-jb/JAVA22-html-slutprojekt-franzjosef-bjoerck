@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,9 @@
   <title>Resa i Skåne</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="media/favicon.png" type="image/x-icon">
+  <link rel="icon" href="../media/favicon.png" type="image/x-icon">
 </head>
+
 
 <header>
   <section class="banner">
@@ -19,17 +20,14 @@
 </header>
 
 
-
-
 <body>
   <main class="container">
     <nav class="navbar">
-      <section>
-        <h1>
-          <a href="../index.html">
-            Home
-          </a>
-        </h1>
+      <section class="home">
+        <h1><a href="../index.html">Hem</a></h1>
+      </section>
+
+      <section class="projects">
         <h1>Projekt</h1>
         <ul>
           <li><a href="resa_i_skane.html">Resa i Skåne</a></li>
@@ -38,26 +36,37 @@
           <li><a href="sicp.html">SICP</a></li>
         </ul>
       </section>
+
       <section class="about">
-        <div>
-          <a href="about.html">Om mig</a>
-        </div>
+        <h1><a href="about.html">Om mig</a></h1>
       </section>
     </nav>
+
+
     <article class="main">
       <h1>Resa i Skåne</h1>
-      <div>
-        <img src="../media/skanetrafiken_ikon.jpg" alt="Skånetrafikens app logo" width="300px">
-        <p class="about_text">Skriva en app i kotlin som slumpar fram resmål i Skåne under perioden som Sommarkortet är
-          giltigt. Även med en haptisk komponent där man skakar telefonen för att slumpa.</p>
-       <img src="../media/skanetrafiken_bok.jpg" alt="100 balla ställen i skåne, bok" width="150px">
-       <img src="../media/skanetrafiken_skylt.jpg" alt="Vägskylt till Runkarp" width="150px">
-       <img src="../media/skanetrafiken_miljo.jpg" alt="Blommande gult rapsfält med röd stuga i bakgrunden" width="150px">
-      </div>
+      <img src="../media/resa_i_skane_ikon.jpg" alt="Skånetrafikens app logo" width="300px">
+      <p class="about_text">Skriva en app i kotlin som slumpar fram resmål i Skåne under perioden som Sommarkortet är
+        giltigt. Även med en haptisk komponent där man skakar telefonen för att slumpa.</p>
+      <img src="../media/resa_i_skane_bok.jpg" alt="100 balla ställen i skåne, bok" width="150px">
+      <img src="../media/resa_i_skane_skylt.jpg" alt="Vägskylt till Runkarp" width="150px">
+      <img src="../media/resa_i_skane_miljo.jpg" alt="Blommande gult rapsfält med röd stuga i bakgrunden" width="150px">
     </article>
   </main>
+
+
   <footer>
-    <section class="footer">footer</section>
+    <section class="social">
+      <a href="https://www.linkedin.com/in/franz-josef-bj%C3%B6rck-62781224a/"><img
+          src="../media/social_media_linkedin.png" alt="linkedin logo" width="75px"></a>
+      <a href="https://github.com/f-jb"><img src="../media/social_media_github.png" width="75px"></a>
+    </section>
+
+    <section class="contact">
+      <a href="media/0x8798A3FA8AAAE0A3A72E6F57FCECB47FABD2614B.asc"><img src="../media/social_gpg.svg" alt="GPG-key"
+          width="20px"> 0x8798A3FA8AAAE0A3A72E6F57FCECB47FABD2614B.asc</a>
+      <a href="mailto:test@test.com"><img src="../media/social_mail.svg" alt="Mailicon" width="20px"> test@test.com</a>
+    </section>
   </footer>
 </body>
 

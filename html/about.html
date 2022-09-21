@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FJs Profilsida</title>
+  <title>Om mig</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" href="media/favicon.png" type="image/x-icon">
+  <link rel="icon" href="../media/favicon.png" type="image/x-icon">
 </head>
+
 
 <header>
   <section class="banner">
@@ -19,17 +20,15 @@
 </header>
 
 
-
-
 <body>
   <main class="container">
     <nav class="navbar">
-      <section>
-        <h1>
-          <a href="../index.html">
-            Home
-          </a>
-        </h1>
+
+      <section class="home">
+        <h1><a href="../index.html">Hem</a></h1>
+      </section>
+
+      <section class="projects">
         <h1>Projekt</h1>
         <ul>
           <li><a href="resa_i_skane.html">Resa i Skåne</a></li>
@@ -38,29 +37,39 @@
           <li><a href="sicp.html">SICP</a></li>
         </ul>
       </section>
+
       <section class="about">
-        <div>
-          <a href="about.html">Om mig</a>
-        </div>
+        <h1><a href="about.html">Om mig</a></h1>
       </section>
     </nav>
+
     <article class="main">
       <h1>Franz - Josef Björck</h1>
-      <div>
-        <img alt="Bild på Franz - Josef" width="500px" src="../media/image.jpg">
-        <p class="about_text">Hej, jag är sjukvårdspersonal som flyr sjukvården. Sedan 2013 så har jag jobbat som
-          undersköterska på
-          diverse
-          ställen, allt från laboratoriemedicin, medicintekniskt, akut och palliativt. Dessutom så har jag även en
-          nästan färdig sjuksköterskeexamen som jag nyligen beslutat att inte slutföra. Redan sedan barnsben har
-          teknikintresset funnit och min första dator var en 386:a. För cirka tio år sedan eller så, så skiftade jag
-          från Windows till Linux och använder för tillfället Slackware på en härlig Thinkpad x230 från 2012. Den är
-          dock kraftigt modifierad med bland annat en i7 processor och biffigt med RAM.</p>
-      </div>
+      <img alt="Bild på Franz - Josef" width="500px" src="../media/about_selfie.jpg">
+      <p class="about_text">Hej, jag är sjukvårdspersonal som flyr sjukvården. Sedan 2013 så har jag jobbat som
+        undersköterska på
+        diverse
+        ställen, allt från laboratoriemedicin, medicintekniskt, akut och palliativt. Dessutom så har jag även en
+        nästan färdig sjuksköterskeexamen som jag nyligen beslutat att inte slutföra. Redan sedan barnsben har
+        teknikintresset funnit och min första dator var en 386:a. För cirka tio år sedan eller så, så skiftade jag
+        från Windows till Linux och använder för tillfället Slackware på en härlig Thinkpad x230 från 2012. Den är
+        dock kraftigt modifierad med bland annat en i7 processor och biffigt med RAM.</p>
     </article>
   </main>
+
+
   <footer>
-    <section class="footer">footer</section>
+    <section class="social">
+      <a href="https://www.linkedin.com/in/franz-josef-bj%C3%B6rck-62781224a/"><img
+          src="../media/social_media_linkedin.png" alt="linkedin logo" width="75px"></a>
+      <a href="https://github.com/f-jb"><img src="../media/social_media_github.png" width="75px"></a>
+    </section>
+
+    <section class="contact">
+      <a href="media/0x8798A3FA8AAAE0A3A72E6F57FCECB47FABD2614B.asc"><img src="../media/social_gpg.svg" alt="GPG-key"
+          width="20px"> 0x8798A3FA8AAAE0A3A72E6F57FCECB47FABD2614B.asc</a>
+      <a href="mailto:test@test.com"><img src="../media/social_mail.svg" alt="Mailicon" width="20px"> test@test.com</a>
+    </section>
   </footer>
 </body>
 

@@ -9,90 +9,132 @@
 	font-family: inconsolata;
 }
 
-.blink{
+/* Den blinkande cursorn i bannern*/
+.blink {
 	animation: blink-animation 1.2s steps(5, start) infinite;
 }
+
 @keyframes blink-animation {
 	to {
 		visibility: hidden;
 	}
-	
 }
-section > h1{
-	text-align: center;
-}
-article > h1{
-	text-align: center;
-}
-a{
+
+/* Stajla länkar */
+a {
 	text-decoration: none;
 }
-a:visited{
+
+a:visited {
 	color: #82d832;
 }
 
-a:hover{
+a:hover {
 	border: red solid 2px;
 }
-a:focus{
+
+a:focus {
 	border: yellow dashed 2px;
 }
 
+/* Centrera rubrikerna */
+section>h1 {
+	text-align: center;
+}
+
+article>h1 {
+	text-align: center;
+}
+
+/* Header */
+.banner {
+	text-align: center;
+	padding: 5rem;
+}
+
+/* Allmänna flödet på sidan */
 .container {
 	display: flex;
 	flex-flow: row wrap;
 }
 
-.banner {
-	text-align: center;
-	padding: 5rem;
-
-}
+/* flödet i navbaren */
 
 .navbar {
 	flex: 10%;
 	padding: 20px;
 }
 
-.footer {
-	min-height: 6em;
-	min-width: 100%;
-	bottom: 0;
-	text-align: center;
-}
-.project_cards{
-	display: flex;
-	flex-flow: row wrap;
-	/* align-content: space-between; */
-	justify-content: space-between;
-}
-.card{
-	min-width: 300px;
-	min-height: 300px;
-	margin-bottom: 5px;
-	text-align: center;
+.navbar > section{
+	margin-bottom: 2rem;
 }
 
-.main {
+.about {
+	font-size: large;
+}
+
+/* artikel flödet */
+article {
 	flex: 90%;
 	padding: 20px;
 	justify-content: space-around;
 	height: calc(100vh - 18rem);
 }
-.about{
-	margin-top: 2rem;
-	font-size: large;
+
+/* project layout */
+.project_cards {
+	display: flex;
+	flex-flow: row wrap;
+	/* align-content: space-between; */
+	justify-content: space-around;
 }
+
+.card {
+	display: flex;
+	flex-flow: column nowrap;
+	min-width: 300px;
+	min-height: 300px;
+	margin-bottom: 5px;
+	justify-content: center;
+	text-align: center;
+}
+
+
+
 @media screen and (max-width: 700px) {
-  .container{   
-    flex-direction: column;
-  }
+	.container {
+		flex-direction: column;
+	}
 }
-li{
+
+li {
 	margin-bottom: 5px;
 	margin-left: 15px;
 }
 
-.about_text{
+.about_text {
 	font-size: larger;
+}
+
+
+footer {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.social {
+	/* min-height: 6em; */
+	/* min-width: 100%; */
+	/* bottom: 0; */
+	/* text-align: center; */
+}
+
+.contact {
+	/* text-align: center; */
+	display: flex;
+	flex-flow: column nowrap;
+	/* justify-content: center; */
+	align-items: center;
+	/* margin-bottom: 15px; */
 }

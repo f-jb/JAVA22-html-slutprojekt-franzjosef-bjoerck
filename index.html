@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,9 @@
   <title>fjb portfolio</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="media/favicon.png" type="image/x-icon">
 </head>
+
 
 <header>
   <section class="banner">
@@ -18,16 +19,16 @@
   </section>
 </header>
 
+
 <body>
   <main class="container">
     <nav class="navbar">
-      <section>
-        <h1>
-          <a href="index.html">
-            Home
-          </a>
-        </h1>
 
+      <section>
+        <h1><a href="index.html">Hem</a></h1>
+      </section>
+
+      <section class="project">
         <h1>Projekt</h1>
         <ul>
           <li><a href="html/resa_i_skane.html">Resa i Skåne</a></li>
@@ -36,36 +37,52 @@
           <li><a href="html/sicp.html">SICP</a></li>
         </ul>
       </section>
+
       <section class="about">
-        <div>
-          <a href="html/about.html">Om mig</a>
-        </div>
+        <h1><a href="html/about.html">Om mig</a></h1>
       </section>
-
-
     </nav>
-    <section class="main">
+
+    <article>
       <h1>Projekt</h1>
-      <div class="project_cards">
+      <section class="project_cards">
         <a class="card" href="html/resa_i_skane.html">
-          <img src="media/skanetrafiken_ikon.jpg" alt="Skånetrafikens app logo" width="300px">
+          <img src="media/resa_i_skane_ikon.jpg" alt="Skånetrafikens app logo" width="300px">
           <h2>Resa i Skåne</h2>
         </a>
+
         <a class="card" href="html/billigast_bensin.html">
+          <img src="media/billigast_bensin_gasoline_kemi.jpg" alt="Kemiska kompositionen av bensin" width="300px">
           <h2>Billigast Bensin</h2>
         </a>
+
         <a class="card" href="html/hemhushallning.html">
+          <img src="media/hemhushallning_kylskap.jpg" alt="Kvinna som står vid kylskåp" width="300px">
           <h2>Hemhushållning</h2>
         </a>
+
         <a class="card" href="html/sicp.html">
+          <img src="media/sicp_sicp_cover.jpg" alt="Omslaget av boken SICP" width="300px">
           <h2>SICP</h2>
         </a>
-      </div>
+      </section>
+    </article>
   </main>
+
+
   <footer>
-    <section class="footer">footer</section>
+    <section class="social">
+      <a href="https://www.linkedin.com/in/franz-josef-bj%C3%B6rck-62781224a/"><img
+          src="media/social_media_linkedin.png" alt="linkedin logo" width="75px"></a>
+      <a href="https://github.com/f-jb"><img src="media/social_media_github.png" width="75px"></a>
+    </section>
+
+    <section class="contact">
+      <a href="media/0x8798A3FA8AAAE0A3A72E6F57FCECB47FABD2614B.asc"><img src="media/social_gpg.svg" alt="GPG-key"
+          width="20px"> 0x8798A3FA8AAAE0A3A72E6F57FCECB47FABD2614B.asc</a>
+      <a href="mailto:test@test.com"><img src="media/social_mail.svg" alt="Mailicon" width="20px"> test@test.com</a>
+    </section>
   </footer>
-  <script src="js/index.js"></script>
 </body>
 
 </html>
