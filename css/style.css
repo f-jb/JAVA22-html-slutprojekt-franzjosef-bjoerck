@@ -49,13 +49,14 @@ article>h1 {
 /* Header */
 .banner {
 	text-align: center;
+	word-wrap: break-word;
 	padding: 5rem;
 }
 
 /* Allmänna flödet på sidan */
 .container {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
 }
 
 /* flödet i navbaren */
@@ -82,7 +83,7 @@ article {
 	flex: 90%;
 	padding: 20px;
 	justify-content: space-around;
-	height: calc(100vh - 18rem);
+	min-height: calc(100vh - 18rem);
 }
 
 /* project layout */
@@ -108,13 +109,6 @@ article {
 	font-size: larger;
 }
 
-/* reflexiv design */
-@media screen and (max-width: 700px) {
-	.container {
-		flex-direction: column;
-	}
-}
-
 /* Footer staljing */
 footer {
 	display: flex;
@@ -126,4 +120,11 @@ footer {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+}
+
+/* reflexiv design */
+@media screen and (min-width: 800px) {
+	.container {
+		flex-flow: row nowrap;
+	}
 }
